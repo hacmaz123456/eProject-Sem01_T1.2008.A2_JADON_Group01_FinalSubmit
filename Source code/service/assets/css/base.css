@@ -1,0 +1,15 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --mainstream-color: #d0a982;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
