@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!--Bootraps CDN-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"
+        href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+
+    <style>
+         /* HOMEPAGE CSS */
+
+/* HEADER */
+
+#header {
+    height: auto;
+    width: 100%;
+}
+
+#company-logo {
+    height: 50px;
+    font-size: 1.5em;
+}
+
+/* MENU 2 LEVEL */
+
+#menu {
+    height: 70px;
+    z-index: 1;
+}
+
+#menu ul {
+    list-style-type: none;
+    background-color: pink;
+    text-align: center;
+    padding: 0;
+}
+
+#menu li:not(#dropdown-list) {
+    display: inline-block;
+    margin-left: -5px;
+    height: 70px;
+    width: 14%;
+    line-height: 70px;
+    position: relative;
+}
+
+#menu a {
+    color: rgb(195, 24, 195);
+    text-decoration: none;
+    font-size: 1.6em;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+#dropdown li {
+    margin-left: 0 !important;
+}
+
+#dropdown-icon {
+    border: solid rgb(195, 24, 195);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+#menu li:hover #dropdown {
+    display: block;
+    z-index: 1;
+}
+
+#menu a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+#active {
+    background-color: white;
+}
+
+        #TeamMember-box{
+             width: 1100px;
+             height: 360px; 
+             border:15cm; 
+             margin-left: 25%; 
+             box-shadow: 0px 0px 5px gray;
+        }
+        #TeamMember-box-1{
+            background-color: salmon;
+             width: 200px;
+             height: auto; 
+             border: none; 
+             margin-left: 30%; 
+             box-shadow: 0px 0px 5px gray;
+        }
+
+        /*Button*/
+        .button{
+            background-color:rgb(247, 235, 235);
+            color:rgb(248, 3, 77);
+            border: 2px solid rgb(238, 113, 11);
+            padding: 6px 20px;
+            font-size: 14px;
+            margin: 30px 130px;
+            cursor: pointer;
+            text-align: center;
+            width: 230px;
+            height: 45px;
+            border-radius: 7px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(223, 28, 77, 0.19);
+            transition-duration: 0.5s;
+        }
+
+        .button:hover{
+            background-color:rgb(235, 66, 94);
+            color:white;
+        }
+
+        .button:active {
+                background-color: salmon;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);      
+        }
+
+        input{
+            height: 40px;
+            line-height: 10px;
+            
+        }
+
+        /*Background*/
+        #background{
+    background: rgb(46,113,245);
+    background: linear-gradient(83deg, rgb(238, 186, 118) 0%, rgb(231, 175, 192) 100%);
+    }
+        
+
+    /* FOOTER */
+
+#footer {
+    height: 1100px;
+    background-color: pink;
+}
+
+#footer-items {
+    height: 700px;
+    margin-top: 20px;
+}
+
+table tr td {
+    padding-top: 10px;
+    font-size: 1.6em;
+}
+
+#icon img {
+    width: 14px;
+}
+
+#footer-support {
+    width: 33%;
+    height: 500px;
+    float: left;
+    margin-left: 50px;
+}
+
+#footer-working-hour {
+    width: 33%;
+    height: 500px;
+    float: left;
+}
+
+#footer-thankyou {
+    text-align: center;
+    font-size: 14px;
+}
+
+#subscribe {
+    font-size: 1.5em;
+    width: 530px;
+    text-align: center;
+}
+
+#subscribe-input input {
+    width: 350px;
+    height: 30px;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+#payment-logo:hover {
+    cursor: pointer;
+    transition: 2s;
+    transform: translateY(-25%)
+}
+
+.hvrbox {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hvrbox img {
+    display: block;
+    width: 100%;
+}
+
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+
+	font-size: 18px;
+	margin-left: 50%;
+    width: 100%;
+	position: absolute;
+	top: 50%;
+	
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#list-work div {
+    padding: 0;
+}
+
+.hvrbox p {
+    margin: 0;
+    padding: 0;
+}
+
+    </style>
+
+</head>
+<body id="background">
+
+    <header id="header">
+        <!-- MENU -->
+        <div style="text-align: center; background-color: pink;">
+            <a href="home.html"><img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt=""></a>
+        </div>
+    
+        <nav id="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a id="active" href="about us.html">ABOUT US</a></li>
+                <li><a href="service/service.html">SERVICE <span id="dropdown-icon"></span></a>
+                    <ul id="dropdown">
+                        <li id="dropdown-list"><a href="service/birthday party.html">BIRTHDAY PARTY</a></li>
+                        <li id="dropdown-list"><a href="service/wedding party.html">WEDDING PARTY</a></li>
+                        <li id="dropdown-list"><a href="service/school events.html">SCHOOL EVENT</a></li>
+                        <li id="dropdown-list"><a href="service/wedding party.html">WEDDING ANNIVERSARIES</a></li>
+                        <li id="dropdown-list"><a href="service/business conference.html">BUSINESS CONFERENCE</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="reviews.html">REVIEW</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<Section>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%; height: 900px;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div  class="carousel-inner">
+                    <div class="item">
+                        <img src="Images/aboutus6.jpg" alt="Chicago" style="width:100%; height: 900px;">       <!--Add Image-->
+                    </div>
+                <div class="item active">
+                    <img  src="Images/aboutus4.jpg" alt="Los Angeles" style="width:100%; height: 900px;">  <!--Add Image-->
+                </div>
+            
+                <div class="item">
+                    <img src="Images/Aboutus2.jpg" alt="Chicago" style="width:100%; height: 900px;">       <!--Add Image-->
+                </div>
+
+                <div class="item">
+                    <img src="Images/aboutus5.jpg" alt="Chicago" style="width:100%; height: 800px;">       <!--Add Image-->
+                </div>
+                
+                <div class="item">
+                    <img src="Images/Aboutus1.jpg" alt="New york" style="width:100%; height: 900px;">      <!--Add Image-->
+                </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <hr style="width:70%;text-align:left;margin-left:240px; margin-top: 50px;">
+
+        <div  class="row" style="margin-top:15px"  >
+            <div class="col-sm-12" >
+                   <p align="center" style="font-size: xx-large;font-weight:500; color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-top: 30px;">WHO WE ARE AND OUR MISSION</p><br> 
+                </div>
+            <div class="col-sm-9">   
+                   <p align="center" style="margin-left: 360px; color:rgb(235, 229, 229); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-top: 5px; font-size:20px">As a leading event organization agency that assures to deliver our customers only the greatest quality of event services with ideal venues, essential equipment, facilities, and professional staff and technicians. In putting customer satisfaction as our utmost priority, JADON has been valued and trusted by thousands of customers, companies, and organizations. Whether it’s a birthday party, wedding, meeting conference, or any types of event, it is our pleasure to offer you and your guests a pleasant experience with the best services.</p><br>               
+            </div>  
+        </div>
+
+        <hr style="width:70%;text-align:left;margin-left:240px; margin-top: 30px;">
+
+        
+        <div id="TeamMember" >
+                <div class="row" style="margin-top:80px" >
+                    <div class="col-sm-12" >
+                        <p align="center" style="font-size:xx-large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white">Meet Our Team Members</p>
+                    </div>
+                </div>
+                <div  class="row" style="margin-left:10px; margin-top: 30px;">
+                    <div id="TeamMember-box" class="col-sm-3" style="margin-right: 70px;">
+                        <div class="col-sm-4">
+                        <img src="Images/Manager.png" class="img-thumbnail" style="margin: 6%; width: 260px; height:280px"> </div>
+                        <p style="margin:2%; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(236, 119, 119); font-size: 27px;">Steve Catling - Director</p>
+                        <p style="font-size: 15px; margin-top:10px; margin:2%">After attending Bournemouth University where he achieved a BA (Hons) degree in Television Production, Steve moved into Events Management industry as a Project Executive. Working his way up over a number of years, his background includes experience in both the agency and corporate side of events.
+
+                            Having worked as an Event Manager for Lloyds Banking Group, his understanding of the corporate environment and what is important when working with an agency, has been central to developing the ethos of Hippo Events.
+                            
+                            Steve places a great emphasis on a proactive approach to working. The answer is always “yes” as he values the importance of honesty and use of initiative in all aspects of work.
+                            
+                            An infectious personality, he takes great pride in establishing strong relationships with all Hippo’s clients and suppliers, adding that personal touch to every stage.
+                            
+                            Steve was recently selected as a Finalist for the industry renowned C&IT A-List award.</p>
+                   
+                        </div>
+
+                        <div id="TeamMember-box" class="col-sm-3" style="margin-right: 70px; margin-top: 25px">
+                            <div class="col-sm-4" style="margin-top: 10px;">
+                            <img src="Images/aboutus3.jpg" class="img-thumbnail" style="margin: 6%; width: 260px; height:280px"> </div>
+                            <p style="margin:2%; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(236, 119, 119); font-size: 27px;">Jilian Schranz - Head Coordinator</p>
+                            <p style="font-size: 15px; margin-top:10px; margin:2%">
+                                Jillian has worn many hats at Event 360 in the past 11 years – from fundraising coach to project manager, to event IT support. She knows our work and our team inside and out. In her current role as Director of Business Development, she can perfectly partner our clients with the services they need and ensure our team delivers flawless event experiences that yield happy participants and stellar results. On the event, you may find her making sure our client gets the perfect “Victory Pose” photo at the finish line, or putting the finishing touches on a “Top Fundraiser” perks tent.
+                                
+                                </p>
+                       
+                            </div>
+
+                        <div class="row" style="margin-left:1px; margin-top: 50px;">
+                            <div id="TeamMember-box" class="col-sm-3" style="margin-right: 70px; margin-top:25px">
+                                <div class="col-sm-4">
+                                <img src="Images/ceo.PNG" class="img-thumbnail" style="margin: 6%; width: 250px; height:280px"> </div>
+                                <p style="margin:2%; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(236, 119, 119); font-size: 27px;">Tim Brockman - Team Coordinator</p>
+                                <p style="font-size: 15px; margin-top:10px; margin:2%">As one of our co-founders, Tim Brockman brings more than 20 years in the event operations industry to Event 360 and in addition to leading the team that has planned and executed some of the country’s most successful fundraising events, he has managed events for international performing artists including Phil Collins, AC/DC, Ozzy Osbourne and Genesis. Tim’s skills and experience make him uniquely qualified to provide executive level oversight to the aspects of event fundraising that are critically important, but that live behind the scenes. With his teams, Tim has personally managed the operations, finances, risk management and logistics for hundreds of large-scale events. He has a keen eye for detail and a sixth-sense for quality control. The front end and back end planning and implementation of every project we do must meet his demanding criteria.</p>
+                           
+                                </div>
+                            </div>
+                    
+                            
+
+                        </div>
+
+                    
+                    </div>
+            
+                    <hr style="width:70%;text-align:left;margin-left:200px; margin-top: 100px;">
+                            <div id="OurWork" >
+                                <div class="row" style="margin-top:20px;">
+                                    <div class="col-sm-12" >
+                                        <p align="center" style="font-size:xx-large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white"> Our Works</p><br>
+                    
+                                        <section align="center">
+                                            
+                                 
+                                            <div class="row" id="list-work">
+                                                <div class="col-sm-4">
+                                                    <a href="service/wedding party.html">
+                                                    <div class="hvrbox">
+                                                        <img src="Images/aboutuswedding.jpg" width="90%" height="300px" class="hvrbox-layer_bottom" align="center">
+                                                        <div class="hvrbox-layer_top">
+                                                            <div class="hvrbox-text">
+                                                                <p style="font-weight:900; text-align: center;   margin-top: 2%; font-size: 25px; color:rgb(231, 128, 117); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">The Perfect Wedding</p><br>
+
+                                                                  <p style="text-align: justify; width: 90%; margin-left: 5%; margin-top: 2%; font-size: 16px; color:rgb(255, 255, 255); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                                                 A splendid wedding venue in offers guests any themed weddings. We offer indoor and outdoor weddings, and different types of venue that can hold a capacity ranges from 300 to 2000 people. 
+                                                        
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                                </a>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <a  href="service/birthday party.html">
+                                                    <div class="hvrbox">
+                                                        <img src="Images/aboutusbirthday.jpg" width="90%" height="300px" class="hvrbox-layer_bottom" align="center">
+                                                        <div class="hvrbox-layer_top">
+                                                            <div class="hvrbox-text">
+                                                                <p style="font-weight:900; text-align: center; margin-top: 2%; font-size: 25px; color:rgb(231, 128, 117); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Birthday Party</p><br>
+
+                                                                  <p style="text-align: justify; width: 90%; margin-left: 5%;  font-size: 16px; color:rgb(255, 255, 255); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                                                    It is always good to seek the help of an event planner to organize 
+                                                                    birthday party of your kids. Professional birthday event planners can make the event a grand success and make the guests for the birthday party happy and satisfied. We provide decorators, caterers, etc., and offer you attractive deals. So you can rely on Jadon to organize your birthday party within your budget. 
+                                                        
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                                </a>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <a  href="service/business conference.html">
+                                                    <div class="hvrbox">
+                                                        <img src="Images/aboutusbusinessevent.jpg" width="90%" height="300px" class="hvrbox-layer_bottom" align="center">
+                                                        <div class="hvrbox-layer_top">
+                                                            <div class="hvrbox-text">
+                                                                <p style="font-weight:900; text-align: center;   margin-top: 2%; font-size: 25px; color:rgb(231, 128, 117); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Business Conference</p><br>
+
+                                                                  <p style="text-align: justify; width: 90%; margin-left: 5%;  font-size: 16px; color:rgb(255, 255, 255); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                                                    
+                                                        With over 20 years of experience, our meeting planning team has seen it all from our work on large corporate meetings to small non-profit forums.  Our depth of knowledge includes attendee engagement in today’s fast paced world and an advanced understanding of event technology. We explore innovative revenue strategies including hotel commission rebates to offset the cost of our services. 
+                                                        
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                                </a>
+                                                </div>
+
+
+                                                    
+                                               
+                                            </div>
+
+                                            <div class="row" style="margin-top: 10%;" id="list-work">
+
+                                                <div class="col-sm-4">
+                                                    <a  href="service/service.html">
+                                                    <div class="hvrbox">
+                                                        <img src="Images/aboutusevent2.jpg" width="90%" height="300px" class="hvrbox-layer_bottom" align="center">
+                                                        <div class="hvrbox-layer_top">
+                                                            <div class="hvrbox-text">
+                                                                <p style="font-weight:900; text-align: center;   margin-top: 2%; font-size: 25px; color:rgb(231, 128, 117); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Gala Dinner</p><br>
+
+                                                                  <p style="text-align: justify; width: 90%; margin-left: 5%;  font-size: 16px; color:rgb(255, 255, 255); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                                                    
+                                                                    Memorable Gala Dinners are no easy task to create, but what is easy is who to turn to for your next Gala Dinner event planning.
+                                                                    Whether your Gala Dinner is for 50 guests or 5,000, 
+                                                                    Jadon Event Management is a go-to planning agency for stylish, entertaining, and memorable events! 
+                                                        
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                                </a>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <a  href="service/school events.html">
+                                                    <div class="hvrbox">
+                                                        <img src="Images/aboutusevent1.jpg" width="90%" height="300px" class="hvrbox-layer_bottom" align="center">
+                                                        <div class="hvrbox-layer_top">
+                                                            <div class="hvrbox-text">
+                                                                <p style="font-weight:900; text-align: center;   margin-top: 2%; font-size: 25px; color:rgb(231, 128, 117); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">School Event</p><br>
+
+                                                                  <p style="text-align: justify; width: 90%; margin-left: 5%;  font-size: 16px; color:rgb(255, 255, 255); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                                                    
+                                                                    It is always good to seek the help of an event planner to organize 
+                                                            birthday party of your kids. Professional birthday event planners can make the event a grand success and make the guests for the birthday party happy and satisfied. The event management company is in rapport with the various service providers like decorators, caterers, etc., so they offer them with attractive deals. So you can rely on your birthday event planner and organize your birthday party within your budget.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                                </a>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <a  href="service/wedding party.html">
+                                                    <div class="hvrbox">
+                                                        <img src="Images/aboutusevent3.jpg" width="90%" height="300px" class="hvrbox-layer_bottom" align="center">
+                                                        <div class="hvrbox-layer_top">
+                                                            <div class="hvrbox-text">
+                                                                <p style="font-weight:900; text-align: center;   margin-top: 2%; font-size: 25px; color:rgb(231, 128, 117); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Wedding Anniversary</p><br>
+
+                                                                  <p style="text-align: justify; width: 90%; margin-left: 5%;  font-size: 16px; color:rgb(255, 255, 255); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                                                    
+                                                                    Anniversary parties not only help the couple cherish their marriage, but also allow loved ones a chance to let the couple know how much their union has influenced those around them. Throwing an anniversary party may seem complicated but Jadon has got all everything you need to plan a memorable anniversary party.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                                </a>
+                                                </div>
+                                               
+                                                    
+                                               
+
+                                            </div>
+                            
+                    
+                           
+            
+            
+                                <div align="center" style="margin-top: 30px;" align="center">
+                                    <a href="service/service.html" style="color:rgb(245, 27, 92); font-size: 15px;"> Learn more here </a>
+                                </div>
+                                    <div align="center">
+                                    <a href="contact us.html"><button style="background-color:rgb(238, 169, 190) 100%;" class="button button" id="button1" style="margin-top: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight:bolder;">Contact Us</button></a></div>    
+                                  
+                                 
+                        </div>
+                                                
+                        </div>
+                   
+                    </div>
+                </div>
+
+
+        </div>
+
+      
+    
+</Section>
+
+<footer id="footer">
+    <div style="text-align: center;">
+        <img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt="">
+    </div>
+    <p style="text-align: center; font-size: 4em; font-family: 'Courier New', Courier, monospace;">JADON EVENT
+        MANAGEMENT SERVICE</p>
+
+    <div id="footer-items">
+        <div id="footer-support">
+            <table>
+                <tr>
+                    <th style="text-align: center;" colspan="3">CONTACT US</th>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ha Noi</span></td>
+                    <td>:</td>
+                    <td>1800 5678</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ho Chi Minh</span></td>
+                    <td>:</td>
+                    <td>1800 6789</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-envelope"></span> Email</span></td>
+                    <td>:</td>
+                    <td>SUPPORT@JADONEM.COM</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="contact us.html"><span class="glyphicon glyphicon-comment"></span> Send a
+                                feedback</a></span></td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">FOLLOW US</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://www.facebook.com/"><span id="icon"><img
+                                        src="icon/fb.png" alt=""></span> Facebook</a></span></td>
+                </tr>
+
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://www.instagram.com/"><span id="icon"><img
+                                        src="icon/instagram.jpg" alt=""></span> Instagram</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://twitter.com/"><span id="icon"><img
+                                        src="icon/twitter.png" alt=""></span> Twitter</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://www.youtube.com/"><span id="icon"><img
+                                        src="icon/youtube.jpg" alt=""></span> Youtube</a></span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="footer-working-hour">
+            <table>
+                <tr>
+                    <th style="text-align: center;" colspan="3">WORKING HOUR</th>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-time"></span> Monday - Friday</span></td>
+                    <td>:</td>
+                    <td>8:00 - 20:00</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-time"></span> Saturday</span></td>
+                    <td>:</td>
+                    <td>8:00 - 19:00</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-time"></span> Sunday</span></td>
+                    <td>:</td>
+                    <td>8:00 - 16:00 (Hotline not working)</td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">ADDRESS</th>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> No.8, Ton That Thuyet
+                            street, My Dinh Ward, Tu Liem District, Ha Noi city</span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> 590, Cach Mang Thang
+                            8 Street, District 3, Ho Chi Minh city</span></td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">ABOUT US</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/who-are-we.png" alt=""></span>
+                                Who are we</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-goal.png" alt=""></span>
+                                Our goal</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-member.png" alt=""></span>
+                                Our member</a></span></td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">REVIEW</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><a href="reviews.html">What customer or press review talk about us?</a></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="reviews.html"><span class="glyphicon glyphicon-pencil"></span></span> Send a
+                        review</a></span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="footer-thankyou">
+            <p style="font-weight: bold; text-align: center;">EVENT PLANNING</p>
+            <ul style="list-style-type: none; font-size: 1.6em;">
+                <li><a href="service/birthday party.html">Birthday Party</a></li>
+                <li><a href="service/wedding party.html">Wedding Party</a></li>
+                <li><a href="service/business conference.html">Business Confernences</a></li>
+                <li><a href="service/wedding party.html">Wedding Anniversary</a></li>
+                <li><a href="service/school events.html">School Event</a></li>
+            </ul>
+            <p style="font-weight: bold; text-align: center;">ACCEPT PAYMENT METHOD</p>
+            
+            <img id="payment-logo" style="width: 100px;" src="payment/1.png" alt="visa-logo" onclick="location.href='https://www.visa.com'">
+            <img id="payment-logo" style="width: 100px;" src="payment/2.png" alt="mastercard-logo" onclick="location.href='https://www.mastercard.com'">
+            <img id="payment-logo" style="width: 100px;" src="payment/3.png" alt="paypal-logo" onclick="location.href='https://www.paypal.com/en/home'">
+            <img id="payment-logo" style="width: 100px;" src="payment/4.png" alt="momo-logo" onclick="location.href='https://momo.vn/'">
+        </div>
+    </div>
+</footer>
+<div style="font-size: 2em; text-align: center;">
+    <p>Copyright © 2020 JADON. All Rights Reserved</p>
+</div>
+</body>
+</html>

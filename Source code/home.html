@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"
+        href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
+
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS + JS -->
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- Modal Subscribe Form -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div style="background-image: url(subscribe-modal/background.jpg);" class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">SUBSCRIBE OUR COMPANY</h4>
+                </div>
+                <div class="modal-body" id="md-body">
+                    <form id="md-frm">
+                        <table id="modal-sub">
+                            <tr>
+                                <th colspan="2">Please fill this form if you wanna receive our new update</th>
+                            </tr>
+
+                            <tr>
+                                <td>First name:</td>
+                                <td>
+                                    <div class="form-group">
+                                        <label class="control-label"><input class="form-control" type="text" name="firstname"></label><span style="color: red;">*</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Last name:</td>
+                                <td>
+                                    <div class="form-group">
+                                        <label class="control-label"><input class="form-control" type="text" name="lastname"></label><span style="color: red;">*</span>
+                                    </div>
+                                </td>
+                                
+                                </tr>
+
+                                <tr>
+                                    <td>Telephone number:</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label class="control-label"><input class="form-control" type="text" name="telnum"></label><span style="color: red;">*</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label class="control-label"><input class="form-control" type="text" name="email"></label><span style="color: red;">*</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Your favorite event:</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label class="control-label"><input class="form-control" type="text" name="event"></label><span style="color: red;">*</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2"><input type="checkbox" id="sub-cb" onclick="document.getElementById('messagescb').innerHTML=''"> <span id="cb-text">Always send you the newest information as fast as we
+                                            can</span></td>
+                                </tr>
+                        </table>
+                </form>
+                <div style="font-size: 1.6em; font-weight: bold;" id="messages"></div>
+                <div style="font-size: 1.6em; font-weight: bold;" id="messagescb"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="submit" type="submit">Submit</button> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+    <header id="header">
+        <!-- MENU -->
+        <div style="text-align: center; background-color: pink;">
+            <a href="home.html"><img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt=""></a>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a id="active" href="home.html">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="service/service.html">SERVICE <span id="dropdown-icon"></span></a>
+                    <ul id="dropdown">
+                        <li id="dropdown-list"><a href="service/birthday party.html">BIRTHDAY PARTY</a></li>
+                        <li id="dropdown-list"><a href="service/wedding party.html">WEDDING PARTY</a></li>
+                        <li id="dropdown-list"><a href="service/school events.html">SCHOOL EVENT</a></li>
+                        <li id="dropdown-list"><a href="service/wedding party.html">WEDDING ANNIVERSARIES</a></li>
+                        <li id="dropdown-list"><a href="service/business conference.html">BUSINESS CONFERENCE</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="reviews.html">REVIEW</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <!-- IMAGE SLIDESHOW -->
+
+        <div id="slideshow">
+            <div class="mySlide" id="fade">
+                <img src="home-img/header/header-1.png">
+                <div id="carousel-caption">
+                    <p>GOT SOME IDEA BUT DON'T KNOW HOW TO START?</p>
+                    <p>DON'T WORRY WE GOT THIS!</p>
+                    <button id="home-book-button" onclick="location.href='service/service.html'">BOOKING ONLINE NOW</button>
+                </div>
+            </div>
+
+            <div class="mySlide" id="fade">
+                <img style="cursor: pointer;" src="home-img/header/header-2.jpg" onclick="location.href='service/birthday party.html'">
+            </div>
+
+            <div class="mySlide" id="fade">
+                <img style="cursor: pointer;" src="home-img/header/header-3.jpg" onclick="location.href='service/wedding party.html'">
+            </div>
+
+            <div class="mySlide" id="fade">
+                <img style="cursor: pointer;" src="home-img/header/header-4.jpg" onclick="location.href='service/business conference.html'">
+            </div>
+
+            <a class="prevIcon" onclick="changeImg(-1)">&#10094;</a>
+            <a class="nextIcon" onclick="changeImg(1)">&#10095;</a>
+
+            <!-- DOT (SLIDESHOW STATUS) -->
+
+            <div id="dot">
+                <span class="dot" onclick="currentImg(1)"></span>
+                <span class="dot" onclick="currentImg(2)"></span>
+                <span class="dot" onclick="currentImg(3)"></span>
+                <span class="dot" onclick="currentImg(4)"></span>
+            </div>
+        </div>
+    </header>
+
+    <div id="home-main">
+        <!-- COOPERATION LOGO -->
+
+        <div id="home-cooperation">
+            <p id="home-main-title">WE PROUD TO COOPERATION WITH</p>
+            <div id="home-cooperation-logo">
+                <div class="animatable bounceIn" id="logo">
+                    <div>
+                        <a href="https://grandpalace.com.vn/"><img class="logo"
+                                src="home-img/cooperation-logo/grand-palace.png" alt=""></a>
+                        <a href="https://kfcvietnam.com.vn/"><img class="logo" src="home-img/cooperation-logo/kfc.png"
+                                alt=""></a>
+                        <a href="https://theadora.vn/"><img class="logo" src="home-img/cooperation-logo/adora.jpg"
+                                alt=""></a>
+                        <a href="https://www.lotteria.vn/"><img class="logo"
+                                src="home-img/cooperation-logo/lotteria.png" alt=""></a>
+                        <a href="http://mymother.com.vn/"><img class="logo"
+                                src="home-img/cooperation-logo/my-mother.png" alt=""></a>
+                        <a href="https://mcdonalds.vn/"><img class="logo" src="home-img/cooperation-logo/mcdonalds.png"
+                                alt=""></a>
+                    </div>
+                </div>
+
+                <a class="prevIcon" id="lg" onclick="changeLogo(-1)">&#10094;</a>
+                <a class="nextIcon" id="lg" onclick="changeLogo(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <div class="animatable bounceInLeft" id="home-aboutus">
+            <img id="aboutus-header" src="home-img/header/header-5.jpg">
+            <div id="home-aboutus-caption">
+                <p>
+                    We try to improve every single day for give to our customers the best quality of service
+                </p>
+                <button id="home-aboutus-button" onclick="location.href='about us.html'">LEARN
+                    MORE ABOUT US</button>
+            </div>
+        </div>
+
+        <div id="home-service">
+            <p id="home-main-title">WHAT SERVICES WILL WE SERVE FOR YOU?</p>
+            <div id="home-service-list">
+                <div style="width: 100%;">
+                    <div class="animatable bounceInRight" id="service-list">
+                        <div class="service-slide" id="service-list-text-fade">
+                            <a href="service/birthday party.html"><img src="home-img/service/birthday.jpg" alt=""></a>
+                            <p id="home-service-list-caption">BIRTHDAY PARTY</p>
+                        </div>
+                        <!--
+                        -->
+                        <div class="service-slide" id="service-list-text-fade">
+                            <a href="service/wedding party.html"><img src="home-img/service/wedding.jpg" alt=""></a>
+                            <p id="home-service-list-caption">WEDDING PARTY</p>
+                        </div>
+                        <!--
+                        -->
+                        <div class="service-slide" id="service-list-text-fade">
+                            <a href="service/business conference.html"><img src="home-img/service/business-conference.jpg" alt=""></a>
+                            <p id="home-service-list-caption">Business conference</p>
+                        </div>
+                        <!--
+                        -->
+                        <div class="service-slide" id="service-list-text-fade">
+                            <a href="service/wedding party.html"><img src="home-img/service/wedding-anniversary.jpg" alt=""></a>
+                            <p id="home-service-list-caption">WEDDING ANNIVERSARY</p>
+                        </div>
+                        <!--
+                        -->
+                        <div class="service-slide" id="service-list-text-fade">
+                            <a href="service/school events.html"><img src="home-img/service/school-event.jpg" alt=""></a>
+                            <p id="home-service-list-caption">SCHOOL EVENT</p>
+                        </div>
+                        <!--
+                        -->
+                        <div class="service-slide" id="service-list-text-fade">
+                            <a href="service/service.html"><img src="home-img/service/other.png" alt=""></a>
+                            <p id="home-service-list-caption">COMMING SOON</p>
+                        </div>
+                    </div>
+
+                    <a class="prevIcon" id="sv" onclick="changeService(-1)">&#10094;</a>
+                    <a class="nextIcon" id="sv" onclick="changeService(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="home-service-template">
+            <p id="template-title">
+                SOME TEMPLATES ARE USED THE MOST</p>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="birthday-tab" data-toggle="tab" href="#birthday" role="tab"
+                        aria-controls="birthday" aria-selected="true">Birthday</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="wedding-party-tab" data-toggle="tab" href="#wedding-party" role="tab"
+                        aria-controls="wedding-party" aria-selected="false">Wedding Party</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="business-conference-tab" data-toggle="tab" href="#business-conference"
+                        role="tab" aria-controls="business-conference" aria-selected="false">Business conference</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="wedding-anniversary-tab" data-toggle="tab" href="#wedding-anniversary"
+                        role="tab" aria-controls="wedding-anniversary" aria-selected="false">Wedding Anniversary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="school-event-tab" data-toggle="tab" href="#school-event" role="tab"
+                        aria-controls="School-Event" aria-selected="false">School Event</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content animatable bounceIn">
+                <div class="tab-pane  active " id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div id="template-items">
+                        <img src="gallery-img/birthday-1/1.jpg" alt="">
+
+                        <p id="template-caption">Birthday with big boss template</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-2/1.jpg" alt="">
+
+                        <p id="template-caption">Best outside wedding</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/business-conference/bc-1.jpg" alt="">
+
+                        <p id="template-caption">Hot template for Business conference</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-anniversary/1.jpg" alt="">
+
+                        <p id="template-caption">Wedding anniversary for the elderly</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/school-event/1.jpg" alt="">
+
+                        <p id="template-caption">School event for kid</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="birthday" role="tabpanel" aria-labelledby="birthday-tab">
+                    <div id="template-items">
+                        <img src="gallery-img/birthday-1/1.jpg" alt="">
+
+                        <p id="template-caption">Birthday with big boss template</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/birthday-2/1.jpg" alt="">
+
+                        <p id="template-caption">Birthday with chick template</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/birthday-2/2.jpg" alt="">
+
+                        <p id="template-caption">Classic birthday</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/birthday-2/3.jpg" alt="">
+
+                        <p id="template-caption">Birthday with prince theme</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/birthday-2/4.jpg" alt="">
+
+                        <p id="template-caption">Birthday with Doraemon theme</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="wedding-party" role="tabpanel" aria-labelledby="wedding-party-tab">
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-2/1.jpg" alt="">
+
+                        <p id="template-caption">Best outside wedding</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-3/1.jpg" alt="">
+
+                        <p id="template-caption">Best wedding with EU's style</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-4/1.jpg" alt="">
+
+                        <p id="template-caption">Wedding with dream purple colour</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-5/1.png" alt="">
+
+                        <p id="template-caption">Wedding with luxurious's style</p>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="business-conference" role="tabpanel"
+                    aria-labelledby="business-conference-tab">
+
+                    <div id="template-items">
+                        <img src="gallery-img/business-conference/bc-1.jpg" alt="">
+
+                        <p id="template-caption">Hot template for Business conference</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/business-conference-2/1.jpg" alt="">
+
+                        <p id="template-caption">Classic Business conference event</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/business-conference-2/2.jpg" alt="">
+
+                        <p id="template-caption">Business conference with short time event</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/business-conference-2/3.jpg" alt="">
+                        
+                        <p id="template-caption">Business conference for small company</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/business-conference-2/4.jpg" alt="">
+
+                        <p id="template-caption">Business conference for big event only</p>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="wedding-anniversary" role="tabpanel"
+                    aria-labelledby="wedding-anniversary-tab">
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-anniversary/1.jpg" alt="">
+
+                        <p id="template-caption">Wedding anniversary for the elderly</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-anniversary/2.jpg" alt="">
+
+                        <p id="template-caption">Wedding anniversary for the elderly with classic version</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-anniversary/3.jpg" alt="">
+
+                        <p id="template-caption">Wedding anniversary with homey style</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-anniversary/4.jpg" alt="">
+
+                        <p id="template-caption">Wedding anniversary for young teen couple</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-anniversary/5.jpg" alt="">
+
+                        <p id="template-caption">Wedding anniversary with indian's style</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/wedding-anniversary/6.jpg" alt="">
+
+                        <p id="template-caption">Wedding anniversary near river</p>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="school-event" role="tabpanel" aria-labelledby="school-event-tab">
+
+                    <div id="template-items">
+                        <img src="gallery-img/school-event/1.jpg" alt="">
+
+                        <p id="template-caption">Classic school event for kid</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/school-event/2.jpg" alt="">
+
+                        <p id="template-caption">Classic school event for high school</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/school-event/3.jpg" alt="">
+
+                        <p id="template-caption">Classic school event for meeting to learn</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/school-event/4.jpg" alt="">
+
+                        <p id="template-caption">Best school event for all time</p>
+                    </div>
+
+                    <div id="template-items">
+                        <img src="gallery-img/school-event/5.jpg" alt="">
+
+                        <p id="template-caption">Classic school event for kid outside version</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="btn">
+                <button class="btn btn-primary" onclick="location.href='service/service.html'">BOOK NOW</button>
+            </div>
+        </div>
+
+        <div id="home-reason">
+            <p id="home-main-title">WHY YOU SHOULD CHOOSE OUR SERVICE?</p>
+            <div class="animatable fadeInDown" id="home-reason-list">
+                <div id="reason">
+                    <img src="home-img/reason/rating.png" alt="">
+                    <p id="reason-caption">Receive High Rating by Customer and Press Review</p>
+                </div>
+
+                <div id="reason">
+                    <img src="home-img/reason/satisfaction-guaranteed.jpg" alt="">
+                    <p id="reason-caption">Satisfaction Guaranteed</p>
+                </div>
+
+                <div id="reason">
+                    <img src="home-img/reason/high-quality.png" alt="">
+                    <p id="reason-caption">High Quality</p>
+                </div>
+
+                <div id="reason">
+                    <img src="home-img/reason/cooperation.png" alt="">
+                    <p id="reason-caption">Trust From Big Partner Companys</p>
+                </div>
+
+                <div id="reason">
+                    <img src="home-img/reason/experience.jpg" alt="">
+                    <p id="reason-caption">For More Than 20 Years of Experience in Event Organization Industry</p>
+                </div>
+            </div>
+
+            <div id="reason-learn-more">
+                <button onmousedown="this.style='box-shadow: none;'" onmouseup="this.style='5px 5px;'">LEARN
+                    MORE</button>
+            </div>
+            <div style="padding: 15px;"></div>
+        </div>
+
+        <div id="home-review">
+            <img style="width: 100%; height: 400px;" src="home-img/review/background/banner.png" alt="">
+            <div id="home-review-background">
+                <div id="home-review-list">
+                    <div class="animatable bounceInRight" id="home-review-customer">
+                        <img src="home-img/review/customer/customer-1.png" alt="">
+
+                        <p>"JADON is the professional company. They're have a long time
+                            worked in this industry
+                            so they know what's customer need in their event." <br>
+                            VNEXPRESS - The Biggest of Press Review International in Vietnam
+                        </p>
+                    </div>
+
+                    <div class="animatable bounceInLeft" id="home-review-customer">
+
+                        <img id="customer-right" src="home-img/review/customer/customer-3.jpg" alt="">
+                        <p>"I have try to many company in Vietnam to help me organitzation a show, an
+                            event... But
+                            when i know JADON i really don't want to use another company service anymore. I think JADON
+                            is the best service in Vietnam from now to future!" <br>
+                            SON TUNG - The Singer and The Chairman in M-TP Entertainment Limited Liability Company
+                        </p>
+                    </div>
+
+                    <div class="animatable bounceInRight" id="home-review-customer">
+                        <img src="home-img/review/customer/customer-2.jpg" alt="">
+
+                        <p>"The first time i used JADON's service when i wanna create a event
+                            make parkour community can play, study and exchange each other.
+                            JADON help me by create a plan, choose the place and so on... is perfect although this is
+                            the first time they know this community and do this type of event. Everything
+                            is finish out of my beyond imagination and i can only say: Amazing good job JADON" <br>
+                            Tonny Cun (Khoa Nguyen) - The Professional Parkour Player in Vietnam and The Vice Director
+                            in Oni Vietnam
+                        </p>
+                    </div>
+                </div>
+
+                <button onclick="location.href='reviews.html'">READ MORE <span>>></span></button>
+            </div>
+        </div>
+
+        <div class="animatable fadeInUp" id="home-gallery">
+            <p id="home-main-title">OUR SUCCESSFULLY EVENT IN THE PAST</p>
+            
+            <div id="home-gallery-list">
+                <div class="animatable bounceInLeft" id="gallery-items">
+                    <img src="gallery-img/wedding-anniversary/5.jpg" alt="">
+
+                    <div id="home-gallery-caption">
+                        <p>Beautiful couple happy wedding anniversary</p>
+                    </div>
+                </div>
+
+                <div class="animatable bounceInLeft" id="gallery-items">
+                    <img src="home-img/gallery/wedding.jpg" alt="">
+
+                    <div id="home-gallery-caption">
+                        <p>Beautiful couple in wedding</p>
+                    </div>
+                </div>
+
+                <div class="animatable bounceInLeft" id="gallery-items"
+                    onclick="location.href='gallery/lynh-duong-son.html'">
+                    <img src="gallery-img/duongcamlinh/1.png" alt="">
+
+                    <div id="home-gallery-caption">
+                        <p>Birthday of a year-old baby</p>
+                    </div>
+                </div>
+
+                <div class="animatable bounceInRight" id="gallery-items">
+                    <img src="gallery-img/wedding-3/4.png" alt="">
+
+                    <div id="home-gallery-caption">
+                        <p>Beautiful picture in wedding</p>
+                    </div>
+                </div>
+
+                <div class="animatable bounceInRight" id="gallery-items"
+                    onclick="location.href='gallery/sky-tour.html'">
+                    <img src="gallery-img/son-tung/son-tung-5.jpeg" alt="">
+
+                    <div id="home-gallery-caption">
+                        <p>Son Tung join the event</p>
+                    </div>
+                </div>
+
+                <div class="animatable bounceInRight" id="gallery-items">
+                    <img src="gallery-img/wedding-anniversary/4.jpg" alt="">
+                    <div id="home-gallery-caption">
+                        <p>Wedding anniversary cake</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="home-gallery-button">
+                <button onclick="location.href='gallery.html'">GO TO GALLERY</button>
+            </div>
+        </div>
+
+        <div id="home-news">
+            <p id="home-main-title">NEWS</p>
+
+            <div class="animatable fadeInUp" id="home-news-list">
+                <div id="home-news-items">
+                    <img src="gallery-img/son-tung/son-tung-5.jpeg" alt="" onclick="location.href='sontung.html'">
+
+                    <p id="home-news-caption">SON TUNG JOIN THE BIG EVENT</p>
+                </div>
+
+                <div id="home-news-items">
+                    <img src="img/cook.png" alt="" onclick="location.href='food.html'">
+
+                    <p id="home-news-caption">TUTORIAL TO COOK THE SPAGETTI</p>
+                </div>
+            </div>
+
+            <div id="home-news-button">
+                <button onclick="location.href='news.html'">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div style="text-align: center;">
+            <img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt="">
+        </div>
+        <p style="text-align: center; font-size: 4em; font-family: 'Courier New', Courier, monospace;">JADON EVENT
+            MANAGEMENT SERVICE</p>
+
+        <div id="footer-items">
+            <div id="footer-support">
+                <table>
+                    <tr>
+                        <th style="text-align: center;" colspan="3">CONTACT US</th>
+                    </tr>
+
+                    <tr>
+                        <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ha Noi</span></td>
+                        <td>:</td>
+                        <td>1800 5678</td>
+                    </tr>
+
+                    <tr>
+                        <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ho Chi Minh</span></td>
+                        <td>:</td>
+                        <td>1800 6789</td>
+                    </tr>
+
+                    <tr>
+                        <td><span><span class="glyphicon glyphicon-envelope"></span> Email</span></td>
+                        <td>:</td>
+                        <td>SUPPORT@JADONEM.COM</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="contact us.html"><span class="glyphicon glyphicon-comment"></span> Send a
+                                    feedback</a></span></td>
+                    </tr>
+
+                    <tr>
+                        <th style="padding-top: 25px; text-align: center;" colspan="3">FOLLOW US</th>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="https://www.facebook.com/"><span id="icon"><img
+                                            src="icon/fb.png" alt=""></span> Facebook</a></span></td>
+                    </tr>
+
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="https://www.instagram.com/"><span id="icon"><img
+                                            src="icon/instagram.jpg" alt=""></span> Instagram</a></span></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="https://twitter.com/"><span id="icon"><img
+                                            src="icon/twitter.png" alt=""></span> Twitter</a></span></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="https://www.youtube.com/"><span id="icon"><img
+                                            src="icon/youtube.jpg" alt=""></span> Youtube</a></span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="footer-working-hour">
+                <table>
+                    <tr>
+                        <th style="text-align: center;" colspan="3">WORKING HOUR</th>
+                    </tr>
+
+                    <tr>
+                        <td><span><span class="glyphicon glyphicon-time"></span> Monday - Friday</span></td>
+                        <td>:</td>
+                        <td>8:00 - 20:00</td>
+                    </tr>
+
+                    <tr>
+                        <td><span><span class="glyphicon glyphicon-time"></span> Saturday</span></td>
+                        <td>:</td>
+                        <td>8:00 - 19:00</td>
+                    </tr>
+
+                    <tr>
+                        <td><span><span class="glyphicon glyphicon-time"></span> Sunday</span></td>
+                        <td>:</td>
+                        <td>8:00 - 16:00 (Hotline not working)</td>
+                    </tr>
+
+                    <tr>
+                        <th style="padding-top: 25px; text-align: center;" colspan="3">ADDRESS</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> No.8, Ton That Thuyet
+                                street, My Dinh Ward, Tu Liem District, Ha Noi city</span></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> 590, Cach Mang Thang
+                                8 Street, District 3, Ho Chi Minh city</span></td>
+                    </tr>
+
+                    <tr>
+                        <th style="padding-top: 25px; text-align: center;" colspan="3">ABOUT US</th>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/who-are-we.png" alt=""></span>
+                                    Who are we</a></span></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-goal.png" alt=""></span>
+                                    Our goal</a></span></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-member.png" alt=""></span>
+                                    Our member</a></span></td>
+                    </tr>
+
+                    <tr>
+                        <th style="padding-top: 25px; text-align: center;" colspan="3">REVIEW</th>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><a href="reviews.html">What customer or press review talk about us?</a></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" colspan="3"><span><a href="reviews.html"><span class="glyphicon glyphicon-pencil"></span></span> Send a
+                            review</a></span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="footer-thankyou">
+                <p style="font-weight: bold; text-align: center;">EVENT PLANNING</p>
+                <ul style="list-style-type: none; font-size: 1.6em;">
+                    <li><a href="service/birthday party.html">Birthday Party</a></li>
+                    <li><a href="service/wedding party.html">Wedding Party</a></li>
+                    <li><a href="service/business conference.html">Business conference</a></li>
+                    <li><a href="service/wedding party.html">Wedding Anniversary</a></li>
+                    <li><a href="service/school events.html">School Event</a></li>
+                </ul>
+                <p style="font-weight: bold; text-align: center;">ACCEPT PAYMENT METHOD</p>
+                
+                <img id="payment-logo" style="width: 100px;" src="payment/1.png" alt="visa-logo" onclick="location.href='https://www.visa.com'">
+                <img id="payment-logo" style="width: 100px;" src="payment/2.png" alt="mastercard-logo" onclick="location.href='https://www.mastercard.com'">
+                <img id="payment-logo" style="width: 100px;" src="payment/3.png" alt="paypal-logo" onclick="location.href='https://www.paypal.com/en/home'">
+                <img id="payment-logo" style="width: 100px;" src="payment/4.png" alt="momo-logo" onclick="location.href='https://momo.vn/'">
+            </div>
+        </div>
+    </footer>
+    <div style="text-align: center; font-size: 2em;">
+        <p>Copyright © 2020 JADON. All Rights Reserved</p>
+    </div>
+</body>
+
+</html>
+
+<!-- Carousel Scripts -->
+
+<script>
+    var slideIndex = 1; // Image index
+    var timerSlide = null;
+
+    showSlide(slideIndex);
+
+    function changeImg(n) {
+        clearTimeout(timerSlide); // Reset time delay when click next/prev arrow
+        showSlide(slideIndex += n); // Go to next/prev image
+    }
+
+    function currentImg(n) {
+        clearTimeout(timerSlide);
+        showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+        var slide = document.getElementsByClassName('mySlide');
+        var dot = document.getElementsByClassName('dot');
+
+        if (n == undefined) { // Before assign value for n
+            n = ++slideIndex;
+        }
+
+        if (n > slide.length) { // n value is out of length (higher than max length)
+            slideIndex = 1;
+        }
+
+        if (n < 1) { // n value is out of length (lower than min length)
+            slideIndex = slide.length;
+        }
+
+        for (var i = 0; i < slide.length; i++) { // All image not display will hide
+            slide[i].style.display = "none";
+        }
+
+        for (i = 0; i < dot.length; i++) {
+            dot[i].className = dot[i].className.replace(" activedot", "");
+        }
+
+        slide[slideIndex - 1].style.display = "block"; // Display image
+        dot[slideIndex - 1].className += " activedot"; // Display active index of image
+
+        timerSlide = setTimeout(showSlide, 5000); // After 5 second will change a new image 
+    }
+
+    // CAROUSEL COOPERATION
+
+    var logoIndex = 3;
+    var timerLogo = null;
+
+    logoSlide(logoIndex);
+
+    function changeLogo(n) {
+        clearTimeout(timerLogo);
+        logoSlide(logoIndex += n);
+    }
+
+    function logoSlide(n) {
+        var logo = document.getElementsByClassName('logo');
+        var count = 0;
+        var j = logoIndex;
+
+        if (n == undefined) {
+            n = ++logoIndex;
+        }
+
+        if (n > logo.length - 1) {
+            logoIndex = 3;
+        }
+
+        if (n < 3) {
+            logoIndex = logo.length - 1;
+        }
+
+        for (var i = 0; i < logo.length; i++) {
+            logo[i].style.display = "none";
+        }
+
+        logo[logoIndex - 3].style.display = "inline-block";
+        logo[logoIndex - 2].style.display = "inline-block";
+        logo[logoIndex - 1].style.display = "inline-block";
+        logo[logoIndex].style.display = "inline-block";
+
+        timerLogo = setTimeout(logoSlide, 5000);
+    }
+
+    // CAROUSEL SERVICE
+
+    var serviceIndex = 2;
+    var timerService = null;
+
+    serviceSlide(serviceIndex);
+
+    function changeService(n) {
+        clearTimeout(timerService);
+        serviceSlide(serviceIndex += n);
+    }
+
+    function serviceSlide(n) {
+        var service = document.getElementsByClassName('service-slide');
+
+        if (n == undefined) {
+            n = ++serviceIndex;
+        }
+
+        if (n > service.length - 1) {
+            serviceIndex = 2;
+        }
+
+        if (n < 2) {
+            serviceIndex = service.length - 1;
+        }
+
+        for (var i = 0; i < service.length; i++) {
+            service[i].style.display = "none";
+        }
+
+        service[serviceIndex - 2].style.display = "inline-block";
+        service[serviceIndex - 1].style.display = "inline-block";
+        service[serviceIndex].style.display = "inline-block";
+
+        timerService = setTimeout(serviceSlide, 5000);
+    }
+
+
+
+    $(window).on('load', function () {
+        $('#myModal').modal('show');
+    });
+
+    // SUBSCRIBE VALIDATOR 
+
+    $(document).ready(function () {
+        $(function subValidate() {
+                $('#md-frm').bootstrapValidator({
+                container: '#messages',
+                excluded: ':disabled',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                submitHandler: function(validator, form, submitButton) {
+                    document.getElementById('md-body').innerHTML="dumamaychode";
+                },
+                fields: {
+                    firstname: {
+                        validators: {
+                            notEmpty: {
+                                message: '<span class="glyphicon glyphicon-alert"></span> First name is required and cannot be empty'
+                            },
+                        }
+                    },
+                    lastname: {
+                        validators: {
+                            notEmpty: {
+                                message: '<span class="glyphicon glyphicon-alert"></span> Last name is required and cannot be empty'
+                            },
+                        }
+                    },
+                    telnum: {
+                        validators: {
+                            notEmpty: {
+                                message: '<span class="glyphicon glyphicon-alert"></span> Telephone number is required and cannot be empty'
+                            },
+                            regexp: {
+                                regexp: /^[0-9]+$/i,
+                                message: '<span class="glyphicon glyphicon-alert"></span> Telephone number contains number (0-9) only'
+                            },
+                            stringLength: {
+                                min: 8,
+                                max: 12,
+                                message: '<span class="glyphicon glyphicon-alert"></span> Telephone number is only from 8~12 digits'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: '<span class="glyphicon glyphicon-alert"></span> The email address is required and cannot be empty'
+                            },
+                            regexp: {
+                                regexp: /^[A-Za-z]\w+[@]\w+[.][A-Za-z]{2,3}([.][A-Za-z]{2})?$/,
+                                message: '<span class="glyphicon glyphicon-alert"></span> The email address is not valid'
+                            }
+                        }
+                    },
+                    event: {
+                        validators: {
+                            notEmpty: {
+                                message: '<span class="glyphicon glyphicon-alert"></span> Your favorite event field is required and cannot be empty'
+                            },
+                        }
+                    }
+                },
+            });
+            $("#submit").on("click", function(){
+                var bootstrapValidator = $("#md-frm").data('bootstrapValidator');
+                var cb = document.getElementById('sub-cb');
+
+
+                bootstrapValidator.validate();
+
+                if (cb.checked == false) {
+                    document.getElementById('messagescb').innerHTML='<span class="glyphicon glyphicon-alert"></span>You must check the box!'
+                    document.getElementById('messagescb').style.color="#a94442";
+                    return false;
+                }
+
+                if(bootstrapValidator.isValid()){
+                    $("#md-body").css({"font-size": "2em", "font-weight":"bold", "text-align":"center"}); 
+                    $("#md-body").html("<p>Thank you very much :D <br> And now... enjoy it!</p>");
+                    $("#submit").css("display", "none");
+                }
+            });
+        })
+    });
+</script>

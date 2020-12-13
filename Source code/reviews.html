@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootraps CDN-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"
+        href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+    <!--Star rating-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--User rating-->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<style>
+    /* FOOTER */
+
+#footer {
+    height: 1100px;
+    background-color: pink;
+}
+
+#footer-items {
+    height: 600px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+#footer table tr td {
+    padding-top: 10px;
+    font-size: 1.6em;
+}
+
+#icon img {
+    width: 14px;
+}
+
+#footer-support {
+    width: 33%;
+    height: 800px;
+    float: left;
+    margin-left: 50px;
+}
+
+#footer-working-hour {
+    width: 33%;
+    height: 500px;
+    float: left;
+}
+
+#footer-thankyou {
+    text-align: center;
+    font-size: 14px;
+}
+
+#subscribe {
+    font-size: 1.5em;
+    width: 530px;
+    text-align: center;
+}
+
+#subscribe-input input {
+    width: 350px;
+    height: 30px;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+#payment-logo:hover {
+    cursor: pointer;
+    transition: 2s;
+    transform: translateY(-25%)
+}
+</style>
+    
+<header id="header">
+    <!-- MENU -->
+    <div style="text-align: center; background-color: pink;">
+        <a href="home.html"><img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt=""></a>
+    </div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+            <li><a href="service/service.html">SERVICE <span id="dropdown-icon"></span></a>
+                <ul id="dropdown">
+                    <li id="dropdown-list"><a href="service/birthday party.html">BIRTHDAY PARTY</a></li>
+                    <li id="dropdown-list"><a href="service/wedding party.html">WEDDING PARTY</a></li>
+                    <li id="dropdown-list"><a href="service/school events.html">SCHOOL EVENT</a></li>
+                    <li id="dropdown-list"><a href="service/wedding party.html">WEDDING ANNIVERSARIES</a></li>
+                    <li id="dropdown-list"><a href="service/business conference.html">BUSINESS CONFERENCE</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a id="active" href="reviews.html">REVIEW</a></li>
+            <li><a href="contact us.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<title>Reviews</title>
+
+    <style>
+        input{
+            width: 400px; height:25px;
+        }
+        tr{
+            height:35px;
+        }
+            
+            /*Button*/
+            .button{
+            background-color:rgb(247, 235, 235);
+            color:rgb(248, 3, 77);
+            border: 2px solid rgb(238, 113, 11);
+            padding: 6px 20px;
+            font-size: 14px;
+            margin: 30px 130px;
+            cursor: pointer;
+            text-align: center;
+            width: 230px;
+            height: 45px;
+            border-radius: 7px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(223, 28, 77, 0.19);
+            transition-duration: 0.5s;
+        }
+
+        .button:hover{
+            background-color:rgb(235, 66, 94);
+            color:white;
+        }
+
+        .button:active {
+                background-color: salmon;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);      
+        }
+
+
+        input{
+            height: 40px;
+            line-height: 10px;
+            
+        }
+
+        /*Star rating*/
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+  color: white;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orangered;
+}
+
+        /* Three column layout */
+            .side {
+            float: left;
+            width: 15%;
+            margin-top:15px;
+            }
+
+            .middle {
+            margin-top:10px;
+            float: left;
+            width: 60%;
+            }
+
+            /* Place text to the right */
+                .right {
+                text-align: right;
+                }
+
+            /* Clear floats after the columns */
+                .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+
+            /* The bar container */
+                .bar-container {
+                width: 90%;
+                background-color: #f1f1f1;
+                text-align: center;
+                color: white;
+                }
+            /* Individual bars */
+            .bar-5 {width: 80%; height: 18px; background-color: #ee667d;}
+            .bar-4 {width: 50%; height: 18px; background-color: #e8f34e;}
+            .bar-3 {width: 20%; height: 18px; background-color: #73ceda;}
+            .bar-2 {width: 15%; height: 18px; background-color: #80e4a1;}
+            .bar-1 {width: 5%; height: 18px; background-color: #764aee;}
+
+    /*Review Star*/
+            .checked {
+        color: rgb(236, 155, 62);
+        }
+
+
+/* HEADER */
+
+#header {
+    height: auto;
+    width: 100%;
+}
+
+#company-logo {
+    height: 50px;
+    font-size: 1.5em;
+}
+
+/* MENU 2 LEVEL */
+
+#menu {
+    height: 70px;
+    z-index: 1;
+}
+
+#menu ul {
+    list-style-type: none;
+    background-color: pink;
+    text-align: center;
+}
+
+#menu li:not(#dropdown-list) {
+    display: inline-block;
+    margin-left: -5px;
+    height: 70px;
+    width: 14%;
+    line-height: 70px;
+    position: relative;
+}
+
+#menu a {
+    color: rgb(195, 24, 195);
+    text-decoration: none;
+    font-size: 1.6em;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#dropdown {
+    display: block;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+}
+
+#dropdown li {
+    margin-left: 0 !important;
+}
+
+#dropdown-icon {
+    border: solid rgb(195, 24, 195);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+#menu li:hover #dropdown {
+    display: block;
+    z-index: 1;
+}
+
+#menu a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+#active {
+    background-color: white;
+}
+ 
+#background{
+    background: rgb(46,113,245);
+    background: linear-gradient(83deg, rgb(238, 186, 118) 0%, rgb(231, 175, 192) 100%);
+   
+}
+#input{
+    width: 600px;
+}
+        .active {
+            background-color: white;
+        }
+
+        .container-fluid {
+            height: 900px;
+        }
+
+        #img-container div {
+            float: left;
+            text-align: center;
+        }
+
+        #img {
+            width: 20%;
+            margin-left: 25px;
+        }
+
+        #img img {
+            width: 60%;
+            border-radius: 50%;
+        }
+
+        #customer-caption {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        #contact-us {
+            float: right;
+            border: 2px solid black;
+            padding: 0 150px 550px 0;
+        }
+
+        #feedback {
+            margin-left: 55px;
+        }
+
+        /*Image Text*/
+        .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Image Box*/
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height:150;
+  padding: 0;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 290px;
+  background: rgb(182, 177, 177); /* Fallback color */
+  background: rgba(168, 163, 163, 0.5); /* Black background with 0.5 opacity */
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 300px;
+  width: 100%;
+  padding: 80px;
+}
+#box-review{
+   border: none;
+   
+   background-image: url(Images/mirror.png);
+    width: 400px;
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+    /*User rating*/
+            div.stars {
+            width: 270px;
+            display: inline-block;
+            }
+
+            input.star { display: none; }
+
+            label.star {
+            float: right;
+            padding: 10px;
+            font-size: 36px;
+            color: #444;
+            transition: all .2s;
+            }
+
+            input.star:checked ~ label.star:before {
+            content: '\f005';
+            color: #FD4;
+            transition: all .25s;
+            }
+
+            input.star-5:checked ~ label.star:before {
+            color: #FE7;
+            text-shadow: 0 0 20px #952;
+            }
+
+            input.star-1:checked ~ label.star:before { color: #F62; }
+
+            label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+            label.star:before {
+            content: '\f006';
+            font-family: FontAwesome;
+            }
+
+
+    </style>
+</head>
+
+<body id="background" >
+    <div class="container">
+        <img align="center" src="review/Images/Reviewbackground.jpg" style="width:100%; height:800px">
+        <div class="content">
+            <p style="font-size:70px; font-style:italic; font-weight:unset; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(255, 255, 255)">Reviews</p>
+  </div>
+    </div>
+    
+        <!--Rating-->
+        <section>
+            <div>
+                <h3 align="center" style="margin-top: 50px; margin-left: 10px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:honeydew">We asked our customers</h2> 
+                <h2 align="center" style="margin-top: 10px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:salmon">"What changed for the better when you came to Jadon?"</h2>       
+                <hr style="width:70%;text-align:left;margin-left:240px; margin-top: 50px;"> 
+                
+                <!--Five star-->
+                <div align="center" style="margin-left: 100px; margin-top:70px">
+                <span class="heading">User Rating</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <div style="margin-right:150px; margin-top:2px; margin-bottom: 30px;">
+                <p style="color:white;">4.8 average based on 25,000 reviews.</p>
+             </div>
+            
+            </div>
+                
+                <div class="row" align="center" style="margin-left: 100px;">
+                    <div class="side">
+                      <div>5 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-5"></div>
+                      </div>
+                    </div>
+                    <div class="side right">
+                      <div>15,865</div>
+                    </div>
+                    <div class="side">
+                      <div>4 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-4"></div>
+                      </div>
+                    </div>
+                    <div class="side right">
+                      <div>7,146</div>
+                    </div>
+                    <div class="side">
+                      <div>3 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-3"></div>
+                    </div>
+                </div>
+                <div class="side right">
+                  <div>1,290</div>
+                </div>
+                <div class="side">
+                  <div>2 star</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-2"></div>
+                  </div>
+                </div>
+                <div class="side right">
+                  <div>380</div>
+                </div>
+                <div class="side">
+                  <div>1 star</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-1"></div>
+                  </div>
+                </div>
+                <div class="side right">
+                  <div>20</div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
+
+        <hr style="border:3px solid #f1f1f1; margin-top: 50px; width:1300px">
+
+        <section>
+            <div class="col-sm-5" id="box-review" style="transform: rotate(5deg);"  >
+                    <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">4.8 out of 5 stars</p>
+                <p style="margin-top: 20px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"JADON has completely streamlined our process of fielding reservation inquiries, booking events and invoicing customers. The website has everything we need with tremendous ease of access and excellent customer service."</p>
+                <p style="margin-top:5px;  font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Lisa Hogwarts, Birthday Party</p>
+            </div>
+
+            <div class="col-sm-5" id="box-review" style="transform: rotate(-5deg);"  >
+                <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">5.0 out of 5 stars</p>
+            <p style="margin-top: 20px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"JADON has been great for my business. It is easy to navigate, and there are great features that make planning an event more organized and the products I produce more professional. My clients love the interactive features."</p>
+            <p style="margin-top:5px;  font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Joe Fugerson, Business Conference</p>
+        </div>
+
+        <div id="box-review" class="col-sm-5" style="transform: rotate(-5deg);" >
+            <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">4.5 out of 5 stars</p>
+        <p style="margin-top: 20px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"JADON is helpful to me with my planning to keep things organized in one place. The events I plan are company sales meetings, and being able to keep all contracts, floor plans, venue information all in one place is a lifesaver. Having the Event Web Page for attendees to RSVP is great! This allows for better attendance tracking on my part. "</p>
+        <p style="margin-top:5px;  font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Katherine Nguyen, Sales Meeting</p>
+    </div>
+
+
+        <div id="box-review" class="col-sm-5" style="transform: rotate(5deg);" >
+            <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">4.9 out of 5 stars</p>
+        <p style="margin-top: 20px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"JADON provides a seamless process from registration, to check-in, to pre-order item claims. My Wedding was a dream come true!"</p>
+        <p style="margin-top:5px;  font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Melissa Fumero, Wedding Party</p>
+    </div>
+
+    <div id="box-review" class="col-sm-5" style="transform: rotate(5deg);" >
+        <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">5.0 out of 5 stars</p>
+    <p style="margin-top: 20px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"Beautiful, astonishing venue, and lovely decorations, easy registration and booking, I love the customer service here, my wife and I will come back for our Wedding Anniversary"</p>
+    <p style="margin-top:5px;  font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Wendy Choi, Wedding Anniversary</p>
+</div>
+
+    <div id="box-review" class="col-sm-5" style="transform: rotate(-5deg);" >
+        <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">5.0 out of 5 stars</p>
+    <p style="margin-top: 20px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"I have truly enjoyed using JADON to keep my event details in one central location, which definitely makes it easier for me to stay on track while planning events. I especially like the to-do list templates that allow me to set up an event and load in all my to-do’s without starting from scratch each time! "</p>
+    <p style="margin-top:5px;  font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Benjamin Jeffords, Middleschool Fair</p>
+    </div>
+
+    <div id="box-review" class="col-sm-5"style="transform: rotate(5deg);" >
+        <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">5.0 out of 5 stars</p>
+    <p style="margin-top: 20px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"Five stars ... Jadon is at the core of our venue business and helps schedule most activities. Both sales and event management staff use the software extensively. We particularly appreciate the responsiveness by support. It's now hard to imagine running our business without it"</p>
+    <p style="margin-top:5px;  font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Casey Hawkins, Business Conference and Meetings</p>
+    </div>
+
+    <div id="box-review" class="col-sm-5" style="margin-bottom: 20px;" style="transform: rotate(-5deg);" >
+        <span style=" margin-bottom:10px; margin-top:30px" class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    <p style="margin-top:5px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(63, 60, 60)">5.0 out of 5 stars</p>
+    <p style="margin-top: 20px;  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 20px; color:rgb(88, 85, 85)">"My son loves to have his birthday planned with Jadon. He gets to choose everything he wants and his birthday was a wonderful day. He's so excited that he already wants to start planning for his next birthday!"</p>
+    <p style="margin-top:5px;   font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 15px; color:rgb(88, 85, 85)">Gina Seans, Birthday Party</p>
+    </div>
+
+        
+
+    <hr style="width:70%;text-align:left;margin-left:240px; margin-top: 100px; clear: both;">
+
+        <div>
+            <p align="center" style="margin-top:60px; font-weight: 500; font-size: 35px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:honeydew">Ready to have your own events?</p>
+            
+            <div align="center" style="margin-top: 30px;">
+            <a href="service/service.html"><button style="margin-right:20px; background-color:rgb(238, 169, 190) 100%;" class="button button1" id="button" style="margin-top: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight:bolder;">PLAN NOW</button></a>
+
+            <a href="contact us.html"><button style="margin-right: 20px; background-color:rgb(238, 169, 190) 100%;" class="button button1" id="button" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight:bolder;">Contact Us</button></a>
+           
+            <a href="gallery.html"><button style="background-color:rgb(238, 169, 190) 100%;" class="button button1" id="button" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight:bolder;">Get inspired</button></a>
+        </div>
+
+        </div>
+
+        <hr style="width:70%;text-align:left;margin-left:240px; margin-top: 100px;">
+
+        </section>
+    
+
+        </section>
+
+        <section style="height: 1200px; text-align: center;">
+                <!--Leave a review form-->
+                <form class="form-horizontal" action="#"  id="contactForm" > 
+                <table style="margin: 0 auto">
+                    <h2 style="text-align: center; font-size: 32px; font-weight:bold; color:rgb(255, 255, 255); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Leave A Review</h2>
+                    <h2 style="text-align: center; font-size: 23px; font-weight: bold; color:white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ">Your input will help us improve our services</h2>
+        
+                    <tr>
+                        <td style="font-size: 15px; font-weight:bold; color:rgb(87, 84, 84); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;" >
+                            <div style="text-align: left;" class="form-group" id="input">
+                            Your Name
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 15px;">
+                            <div  class="form-group" id="input">
+                            <input id="formid" class="form-control" name="firstname" placeholder="Enter Your Name">
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr td style="font-size: 15px; font-weight:bold; color:rgb(87, 84, 84); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;" > 
+                        <td>
+                            <div style="text-align: left;"  class="form-group" id="input">
+                            Email Address
+                            </div>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <div  class="form-group" id="input">
+                                <input id="formid"  type="mail" class="form-control" name="email" placeholder="Enter mail" >
+                            </div>
+                        
+                        </td>
+                       
+                    </tr>
+        
+                    <tr style="font-size: 15px; font-weight:bold; color:rgb(87, 84, 84); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;"> 
+                        <td>
+                            <div style="text-align: left;"  class="form-group" id="input">
+                            Phone
+                            </div>
+                        </td><br>
+                    </tr>
+        
+                    <tr>
+                            <td>
+                                <div  class="form-group" id="input">
+                                <input id="formid"  class="form-control" name="phone" placeholder="Enter Phone" >
+                                </div>
+                            </td>
+                    </tr>
+        
+                    <tr style="font-size: 15px; font-weight:bold; color:rgb(87, 84, 84); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;"> 
+                        <td>
+                            <div style="text-align: left;"  class="form-group" id="input">
+                            Description (Please do not include sensitive information like usernames/passwords)
+                            </div>
+                        </td><br>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2">
+                            <div class="form-group" id="input" > 
+                            <textarea class="form-control" name="mess" id="formid" cols=100 rows=8></textarea>
+                            </div>
+                        </td>
+                    </tr>
+        
+                    <tr style="font-size: 15px; font-weight:bold; color:rgb(87, 84, 84); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;"> 
+                        <td>
+                            <div style="text-align: center;" class="form-group" id="input">
+                            How would you rate Jadon? <br>
+
+                            <div class="stars">
+              
+                                <input class="star star-5" id="star-5" type="radio" name="star"/>
+                                <label class="star star-5" for="star-5"></label>
+                                <input class="star star-4" id="star-4" type="radio" name="star"/>
+                                <label class="star star-4" for="star-4"></label>
+                                <input class="star star-3" id="star-3" type="radio" name="star"/>
+                                <label class="star star-3" for="star-3"></label>
+                                <input class="star star-2" id="star-2" type="radio" name="star"/>
+                                <label class="star star-2" for="star-2"></label>
+                                <input class="star star-2" id="star-1" type="radio" name="star"/>
+                                <label class="star star-2" for="star-1"></label>
+                                
+                                    
+                            </div>
+          
+                            </div>
+                        </td><br>
+                    </tr>
+         
+                </table>
+
+                <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                        
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Thank you very much, your feedback is much appreciated! Please contact us if you have any questions and our team will get back to you shortly.
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.href='reviews.html'">Close</button>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+        
+                
+
+                 <!--Check error-->               
+     
+
+                
+               
+        
+                <div class="col-sm-8" style="margin-left:380px; margin-top:50px;">
+                  <tr> 
+                    <td>
+                        <div id="messages" style="margin-left:100px"></div>
+                        <div id="messagescb" style="margin-left:100px"></div>
+                    </td>
+                    <td>
+                        <input style="text-align: center;" type="submit" value="SUBMIT" class="button" id="submit" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight:500; margin-left:170px">
+                    </td>
+                </tr>
+            </div>
+            </form>
+
+            <script> 
+
+                $(document).ready(function(){
+                  $('#contactForm').bootstrapValidator({
+                      container: '#messages',
+                      excluded: ':disabled',
+                      feedbackIcons: {
+                          valid: 'glyphicon glyphicon-ok',
+                          invalid: 'glyphicon glyphicon-remove',
+                          validating: 'glyphicon glyphicon-refresh'
+                      },
+                      fields: {
+                          email:{
+                              validators:{
+                                  notEmpty: {
+                                      message: 'Mail is required and cannot be empty'
+                                  },
+                                  regexp: {
+                                      regexp: /^\w+[@]\w+[.]\w+([.]\w{2})?$/,
+                                      message: 'The email address is not valid'
+                                  }
+                              }
+                          
+                          },
+        
+                          firstname:{
+                              validators:{
+                                  notEmpty: {
+                                      message: 'Name is required and cannot be empty'
+                                  }
+                              }
+                          },
+        
+                          lastname:{
+                              validators:{
+                                  notEmpty: {
+                                      message: 'Last Name is required and cannot be empty'
+                                  }
+                              }
+                          },
+        
+                          mess:{
+                              validators:{
+                                  notEmpty: {
+                                      message: 'Message is required and cannot be empty'
+                                  }
+                              }
+                          },
+                         
+                          
+                          phone: {
+                              validators: {
+                                  notEmpty: {
+                                      message: 'Phone number is required and cannot be emptry'
+                                  },
+                                  regexp: {
+                                      regexp: /^[0-9]+$/i,
+                                      message: 'Phone contains number (0-9) only'
+                                  }
+                              }
+                          },
+                      
+                      
+                      }
+        
+        
+                });
+                $("#submit").on("click", function(){
+                var bootstrapValidator = $("#contactForm").data('bootstrapValidator');
+
+                bootstrapValidator.validate();
+
+                if (bootstrapValidator.isValid()){
+                    $('#myModal').modal('show');
+                }
+            });
+              });
+        
+          </script>
+        
+                        
+        </section>     
+        
+    
+</body>
+
+<footer id="footer">
+    <div style="text-align: center;">
+        <img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt="">
+    </div>
+    <p style="text-align: center; font-size: 4em; font-family: 'Courier New', Courier, monospace;">JADON EVENT
+        MANAGEMENT SERVICE</p>
+
+    <div id="footer-items">
+        <div id="footer-support">
+            <table>
+                <tr>
+                    <th style="text-align: center;" colspan="3">CONTACT US</th>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ha Noi</span></td>
+                    <td>:</td>
+                    <td>1800 5678</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ho Chi Minh</span></td>
+                    <td>:</td>
+                    <td>1800 6789</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-envelope"></span> Email</span></td>
+                    <td>:</td>
+                    <td>SUPPORT@JADONEM.COM</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="contact us.html"><span class="glyphicon glyphicon-comment"></span> Send a
+                                feedback</a></span></td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">FOLLOW US</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://www.facebook.com/"><span id="icon"><img
+                                        src="icon/fb.png" alt=""></span> Facebook</a></span></td>
+                </tr>
+
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://www.instagram.com/"><span id="icon"><img
+                                        src="icon/instagram.jpg" alt=""></span> Instagram</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://twitter.com/"><span id="icon"><img
+                                        src="icon/twitter.png" alt=""></span> Twitter</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="https://www.youtube.com/"><span id="icon"><img
+                                        src="icon/youtube.jpg" alt=""></span> Youtube</a></span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="footer-working-hour">
+            <table>
+                <tr>
+                    <th style="text-align: center;" colspan="3">WORKING HOUR</th>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-time"></span> Monday - Friday</span></td>
+                    <td>:</td>
+                    <td>8:00 - 20:00</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-time"></span> Saturday</span></td>
+                    <td>:</td>
+                    <td>8:00 - 19:00</td>
+                </tr>
+
+                <tr>
+                    <td><span><span class="glyphicon glyphicon-time"></span> Sunday</span></td>
+                    <td>:</td>
+                    <td>8:00 - 16:00 (Hotline not working)</td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">ADDRESS</th>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> No.8, Ton That Thuyet
+                            street, My Dinh Ward, Tu Liem District, Ha Noi city</span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> 590, Cach Mang Thang
+                            8 Street, District 3, Ho Chi Minh city</span></td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">ABOUT US</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/who-are-we.png" alt=""></span>
+                                Who are we</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-goal.png" alt=""></span>
+                                Our goal</a></span></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-member.png" alt=""></span>
+                                Our member</a></span></td>
+                </tr>
+
+                <tr>
+                    <th style="padding-top: 25px; text-align: center;" colspan="3">REVIEW</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><a href="reviews.html">What customer or press review talk about us?</a></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="3"><span><a href="reviews.html"><span class="glyphicon glyphicon-pencil"></span></span> Send a
+                        review</a></span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="footer-thankyou">
+            <p style="font-weight: bold; text-align: center;">EVENT PLANNING</p>
+            <ul style="list-style-type: none; font-size: 1.6em;">
+                <li><a href="service/birthday party.html">Birthday Party</a></li>
+                <li><a href="service/wedding party.html">Wedding Party</a></li>
+                <li><a href="service/business conference.html">Business conference</a></li>
+                <li><a href="service/wedding party.html">Wedding Anniversary</a></li>
+                <li><a href="service/school events.html">School Event</a></li>
+            </ul>
+            <p style="font-weight: bold; text-align: center;">ACCEPT PAYMENT METHOD</p>
+            
+            <img id="payment-logo" style="width: 100px;" src="payment/1.png" alt="visa-logo" onclick="location.href='https://www.visa.com'">
+            <img id="payment-logo" style="width: 100px;" src="payment/2.png" alt="mastercard-logo" onclick="location.href='https://www.mastercard.com'">
+            <img id="payment-logo" style="width: 100px;" src="payment/3.png" alt="paypal-logo" onclick="location.href='https://www.paypal.com/en/home'">
+            <img id="payment-logo" style="width: 100px;" src="payment/4.png" alt="momo-logo" onclick="location.href='https://momo.vn/'">
+        </div>
+    </div>
+</footer>
+<div style="font-size: 2em; text-align: center;">
+    <p>Copyright © 2020 JADON. All Rights Reserved</p>
+</div>
+
+
+</html>

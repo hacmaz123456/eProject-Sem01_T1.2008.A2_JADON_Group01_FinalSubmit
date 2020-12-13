@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: left;
+  background: white;
+
+}
+
+#header {
+    height: 270px;
+    width: 100%;
+}
+
+#company-logo {
+    height: 50px;
+    font-size: 1.5em;
+}
+
+/* MENU 2 LEVEL */
+
+#menu {
+    height: 70px;
+    z-index: 1;
+}
+
+#menu ul {
+    list-style-type: none;
+    background-color: pink;
+    text-align: center;
+    padding: 0;
+}
+
+#menu li:not(#dropdown-list) {
+    display: inline-block;
+    margin-left: -5px;
+    height: 70px;
+    width: 14%;
+    line-height: 70px;
+    position: relative;
+}
+
+#menu a {
+    color: rgb(195, 24, 195);
+    text-decoration: none;
+    font-size: 1.6em;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+#dropdown li {
+    margin-left: 0 !important;
+}
+
+#dropdown-icon {
+    border: solid rgb(195, 24, 195);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+#menu li:hover #dropdown {
+    display: block;
+    z-index: 1;
+}
+
+#menu a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+#active {
+    background-color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    text-align: center;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+#footer {
+    height: 1100px;
+    background-color: pink;
+}
+
+#footer-items {
+    height: 700px;
+    margin-top: 20px;
+}
+
+table tr td {
+    padding-top: 10px;
+    font-size: 1.6em;
+}
+
+#icon img {
+    width: 14px;
+}
+
+#footer-support {
+    width: 33%;
+    height: 500px;
+    float: left;
+    margin-left: 50px;
+}
+
+#footer-working-hour {
+    width: 33%;
+    height: 500px;
+    float: left;
+}
+
+#footer-thankyou {
+    text-align: center;
+    font-size: 14px;
+}
+
+#subscribe {
+    font-size: 1.5em;
+    width: 530px;
+    text-align: center;
+}
+
+#subscribe-input input {
+    width: 350px;
+    height: 30px;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+#payment-logo:hover {
+    cursor: pointer;
+    transition: 2s;
+    transform: translateY(-25%)
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.word {
+    text-align: center;
+    font-family: Times New Roman;
+    line-height: 25px;
+    color: #303030;
+    margin: 14px 0;
+}
+</style>
+</head>
+<body>
+
+  <header id="header">
+    <!-- MENU -->
+    <div style="text-align: center; background-color: pink;">
+        <a href="home.html"><img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt=""></a>
+    </div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about us.html">ABOUT US</a></li>
+            <li><a href="service/service.html">SERVICE <span id="dropdown-icon"></span></a>
+                <ul id="dropdown">
+                    <li id="dropdown-list"><a href="service/birthday party.html">BIRTHDAY PARTY</a></li>
+                    <li id="dropdown-list"><a href="service/wedding party.html">WEDDING PARTY</a></li>
+                    <li id="dropdown-list"><a href="service/school events.html">SCHOOL EVENT</a></li>
+                    <li id="dropdown-list"><a href="service/wedding party.html">WEDDING ANNIVERSARIES</a></li>
+                    <li id="dropdown-list"><a href="service/business conference.html">BUSINESS CONFERENCE</a></li>
+                </ul>
+            </li>
+            <li><a id="active" href="news.html">NEWS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">REVIEW</a></li>
+            <li><a href="contact us.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="header">
+    <img src="img/mtp.jpg" width="100%">
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Son Tung M-TP officially cooperated with Luxstay with two shark Hung and Vietnamese shark: Both invested in finance and promoted the image of Vietnamese tourism.</h2>
+      <div>According to our research, Son Tung M-TP not only is the image representative, but M-TP Entertainment also invests financially in Luxstay. The reason, we need to learn carefully about this issue because before now, it is not rare that the big / A-star in Vietnamese showbiz has announced business cooperation with a few brands, but often they only play the role. image representation of the brand. At most, they can contribute a little capital, but rarely pour as much money to invest as other real investors in the market.</div>
+      <p>However, that's all we know, Luxstay does not disclose the specific investment amount nor the investment strategy from M-TP Entertainment. We also do not know whether M-TP Entertainment will make an immediate investment in a short time or have a long-term strategy to accompany Luxstay like the Shark or not? However, although it only appeared quite "flashy", but with his heat, Son Tung is still the focus of attracting attention at the event.</p>
+    </div>
+    <div class="card">
+      <h2>Son Tung M-TP not only represents the image but also invests financially in Luxstay</h2>
+      <div class="fakeimg">
+        <img src="img/sontung.png">
+    </div>
+      <p class="word">Son Tung M-TP appears with a very luxurious manner</p>
+      <p>With Luxstay, this startup looks to M-TP Entertainment and Son Tung M-TP for more practical reasons. According to Luxstay: M-TP Entertainment is led by Chairman Nguyen Thanh Tung, an entertainment media business capable of creating influence and spreading inspiration to young people, this is an important client file and the potential that Luxstay aims to achieve. In addition to financial investment and cooperation with M-TP Entertainment, the Luxstay side is expected to strengthen the communication, create new technology trends for the community, thereby spreading Vietnam's image to the world.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg">
+         <img src="img/jadon.png">   
+    </div>
+      <p>Với những sự hỗ trợ đủ mọi mặt như thế này, con đường đi lên "kỳ lân" của Luxstay hẳn sẽ bớt gian truân hơn, như kỳ vọng của CEO Steven Nguyễn</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <video width="320" height="240" controls>
+          <source src="img/SKY TOUR MOVIE - GOING GLOBAL - STAY TUNED.mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<footer id="footer">
+  <div style="text-align: center;">
+      <img style="height: 150px; border-radius: 50%; width: 150px;" src="company-logo/logo.gif" alt="">
+  </div>
+  <p style="text-align: center; font-size: 4em; font-family: 'Courier New', Courier, monospace;">JADON EVENT
+      MANAGEMENT SERVICE</p>
+
+  <div id="footer-items">
+      <div id="footer-support">
+          <table>
+              <tr>
+                  <th style="text-align: center;" colspan="3">CONTACT US</th>
+              </tr>
+
+              <tr>
+                  <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ha Noi</span></td>
+                  <td>:</td>
+                  <td>1800 5678</td>
+              </tr>
+
+              <tr>
+                  <td><span><span class="glyphicon glyphicon-earphone"></span> Hotline in Ho Chi Minh</span></td>
+                  <td>:</td>
+                  <td>1800 6789</td>
+              </tr>
+
+              <tr>
+                  <td><span><span class="glyphicon glyphicon-envelope"></span> Email</span></td>
+                  <td>:</td>
+                  <td>SUPPORT@JADONEM.COM</td>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="contact us.html"><span class="glyphicon glyphicon-comment"></span> Send a
+                              feedback</a></span></td>
+              </tr>
+
+              <tr>
+                  <th style="padding-top: 25px; text-align: center;" colspan="3">FOLLOW US</th>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="https://www.facebook.com/"><span id="icon"><img
+                                      src="icon/fb.png" alt=""></span> Facebook</a></span></td>
+              </tr>
+
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="https://www.instagram.com/"><span id="icon"><img
+                                      src="icon/instagram.jpg" alt=""></span> Instagram</a></span></td>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="https://twitter.com/"><span id="icon"><img
+                                      src="icon/twitter.png" alt=""></span> Twitter</a></span></td>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="https://www.youtube.com/"><span id="icon"><img
+                                      src="icon/youtube.jpg" alt=""></span> Youtube</a></span></td>
+              </tr>
+          </table>
+      </div>
+
+      <div id="footer-working-hour">
+          <table>
+              <tr>
+                  <th style="text-align: center;" colspan="3">WORKING HOUR</th>
+              </tr>
+
+              <tr>
+                  <td><span><span class="glyphicon glyphicon-time"></span> Monday - Friday</span></td>
+                  <td>:</td>
+                  <td>8:00 - 20:00</td>
+              </tr>
+
+              <tr>
+                  <td><span><span class="glyphicon glyphicon-time"></span> Saturday</span></td>
+                  <td>:</td>
+                  <td>8:00 - 19:00</td>
+              </tr>
+
+              <tr>
+                  <td><span><span class="glyphicon glyphicon-time"></span> Sunday</span></td>
+                  <td>:</td>
+                  <td>8:00 - 16:00 (Hotline not working)</td>
+              </tr>
+
+              <tr>
+                  <th style="padding-top: 25px; text-align: center;" colspan="3">ADDRESS</th>
+              </tr>
+
+              <tr>
+                  <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> No.8, Ton That Thuyet
+                          street, My Dinh Ward, Tu Liem District, Ha Noi city</span></td>
+              </tr>
+
+              <tr>
+                  <td colspan="3"><span><span class="glyphicon glyphicon-map-marker"></span> 590, Cach Mang Thang
+                          8 Street, District 3, Ho Chi Minh city</span></td>
+              </tr>
+
+              <tr>
+                  <th style="padding-top: 25px; text-align: center;" colspan="3">ABOUT US</th>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/who-are-we.png" alt=""></span>
+                              Who are we</a></span></td>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-goal.png" alt=""></span>
+                              Our goal</a></span></td>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="about us.html"><span id="icon"><img src="icon/our-member.png" alt=""></span>
+                              Our member</a></span></td>
+              </tr>
+
+              <tr>
+                  <th style="padding-top: 25px; text-align: center;" colspan="3">REVIEW</th>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><a href="reviews.html">What customer or press review talk about us?</a></td>
+              </tr>
+
+              <tr>
+                  <td style="text-align: center;" colspan="3"><span><a href="reviews.html"><span class="glyphicon glyphicon-pencil"></span></span> Send a
+                      review</a></span></td>
+              </tr>
+          </table>
+      </div>
+
+      <div id="footer-thankyou">
+          <p style="font-weight: bold; text-align: center;">EVENT PLANNING</p>
+          <ul style="list-style-type: none; font-size: 1.6em;">
+              <li><a href="service/birthday party.html">Birthday Party</a></li>
+              <li><a href="service/wedding party.html">Wedding Party</a></li>
+              <li><a href="service/business conference.html">Business conference</a></li>
+              <li><a href="service/wedding party.html">Wedding Anniversary</a></li>
+              <li><a href="service/school events.html">School Event</a></li>
+          </ul>
+          <p style="font-weight: bold; text-align: center;">ACCEPT PAYMENT METHOD</p>
+          
+          <img id="payment-logo" style="width: 100px;" src="payment/1.png" alt="visa-logo" onclick="location.href='https://www.visa.com'">
+          <img id="payment-logo" style="width: 100px;" src="payment/2.png" alt="mastercard-logo" onclick="location.href='https://www.mastercard.com'">
+          <img id="payment-logo" style="width: 100px;" src="payment/3.png" alt="paypal-logo" onclick="location.href='https://www.paypal.com/en/home'">
+          <img id="payment-logo" style="width: 100px;" src="payment/4.png" alt="momo-logo" onclick="location.href='https://momo.vn/'">
+      </div>
+  </div>
+</footer>
+<div style="text-align: center; font-size: 2em;">
+  <p>Copyright © 2020 JADON. All Rights Reserved</p>
+</div>
+
+</body>
+</html>
